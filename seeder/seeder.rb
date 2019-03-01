@@ -1,7 +1,7 @@
 pages << {
     page_type: 'products_listing',
     method: 'GET',
-    url: "https://groceries.asda.com/api/items/view?itemid=1000029780616%2C1000029780803%2C1000000475186%2C910001036913%2C910000445293%2C76712170%2C910002476394%2C910002476256%2C910002475814&responsegroup=extended&cacheable=true&storeid=4565&shipdate=currentDate&requestorigin=gi%22",
+    url: "https://groceries.asda.com/cmscontent/json/pages/browse/shelf?Endeca_user_segments=anonymous%7Cstore_4565%7Cwapp%7Cvp_XXL%7CZero_Order_Customers%7CDelivery_Pass_Older_Than_12_Months%7CNon_Baby_Customers%7Ctemp_mild%7Ccond_bad%7Cdp-false%7C1007%7C1019%7C1020%7C1023%7C1024%7C1027%7C1038%7C1041%7C1042%7C1043%7C1047%7C1053%7C1055%7C1057%7C1059%7C1067%7C1070%7C1082%7C1087%7C1097%7C1098%7C1099%7C1100%7C1102%7C1105%7C1107%7C1109%7C1110%7C1111%7C1112%7C1116%7C1117%7C1119%7C1123%7C1124%7C1126%7C1128%7C1130%7C1140%7C1141%7C1144%7C1147%7C1150%7C1152%7C1157%7C1159%7C1160%7C1165%7C1166%7C1167%7C1169%7C1170%7C1172%7C1173%7C1174%7C1176%7C1177%7C1178%7C1179%7C1180%7C1182%7C1183%7C1184%7C1186%7C1187%7C1189%7C1190%7C1194%7C1196%7C1197%7C1198%7C1201%7C1202%7C1204%7C1206%7C1207%7C1208%7C1209%7C1210%7C1213%7C1214&storeId=4565&shipDate=1551398400000&N=106234&No=0&Nrpp=60&requestorigin=gi&_=1551466576170",
     vars: {
         'input_type' => 'taxonomy',
         'search_term' => '-',
@@ -12,6 +12,7 @@ pages << {
 }
 search_terms = ['Red Bull', 'RedBull', 'Energético', 'Energéticos']
 search_terms.each do |search_term|
+  abort('')
   pages << {
       page_type: 'products_listing',
       method: 'GET',
